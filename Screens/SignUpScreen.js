@@ -2,7 +2,7 @@ import { StyleSheet, Text, View } from 'react-native'
 import React from 'react'
 import { TextInput } from 'react-native-web'
 
-const SignInScreen = () => {
+const SignUpScreen = () => {
   return (
     <View>
       <Text>SignInScreen</Text>
@@ -11,6 +11,6 @@ const SignInScreen = () => {
   )
 }
 
-export default SignInScreen
+export default SignUpScreen
 
 const styles = StyleSheet.create({})

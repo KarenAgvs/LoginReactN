@@ -39,10 +39,12 @@ const LogInScreen = () => {
    }
   return (
     <View style={styles.firstcontainer}>
-      <Text>bj sbv</Text>
+      <Text>Log in</Text>
       <TextInput onChangeText={(text)=>setemail(text)}  style={styles.container} placeholder='Email'></TextInput>
       <TextInput onChangeText={(text)=>setpasword(text)} style={styles.container} secureTextEntry placeholder='Password'></TextInput>
+      <Text style={styles.txtpswrd}>Forgot your pasword?</Text>
       <TouchableOpacity onPress={signIn} style={styles.btnlogin}><Text style={styles.textbtn}>Sign in</Text></TouchableOpacity> 
+      <Text>Don't have an account ?</Text>
       {/* <TouchableOpacity  onPress={createAccount} style={styles.btnlogin}><Text style={styles.textbtn}>Sign up</Text></TouchableOpacity> */}
     </View>
 
@@ -58,7 +60,8 @@ const styles = StyleSheet.create({
     justifyContent:'center',
     alignItems:'center',
     alignContent:'center',
-    backgroundColor:'#ff0000',
+    width: 150,
+    borderColor:'black'
 
 
   },
@@ -86,5 +89,9 @@ const styles = StyleSheet.create({
   textbtn:{
     color:'#ffff',
     textAlign:'center',
+  },
+
+  txtpswrd:{
+    marginBottom:10,    
   }
 })

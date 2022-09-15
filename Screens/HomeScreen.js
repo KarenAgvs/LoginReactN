@@ -12,7 +12,7 @@ const HomeScreen = () => {
     <View>
       <NavigationContainer>
         <Stack.Navigator>
-            <Stack.Screen name='Log in'  options={{headerShown:false}} component={LogInScreen}/>
+            <Stack.Screen name='Expo app'  options={{headerShown:false}} component={LogInScreen}/>
         </Stack.Navigator>
     </NavigationContainer>
     </View>
