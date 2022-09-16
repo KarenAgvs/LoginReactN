@@ -28,7 +28,7 @@ const LogInScreen = () => {
     })
   }
 
-   const signIn=()=>{
+   const signIn=(navigation)=>{
      signInWithEmailAndPassword(auth,email,pasword) 
      .then(()=>{
        console.log('You are logged !')
